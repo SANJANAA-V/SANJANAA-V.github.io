@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sanjanaa V | ML and Backend Projects</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:760px;margin:40px auto;padding:0 16px;color:#222;line-height:1.55}
+h1{margin-bottom:4px}
+.sub{color:#555;margin-top:0}
+.card{border:1px solid #ddd;border-radius:10px;padding:16px 18px;margin:18px 0}
+.card h2{margin:0 0 6px;font-size:20px}
+a.btn{display:inline-block;margin:8px 8px 0 0;padding:8px 14px;border-radius:6px;background:#1f6feb;color:#fff;text-decoration:none;font-size:14px}
+a.alt{background:#eee;color:#222}
+small{color:#666}
+</style>
+</head>
+<body>
+<h1>Sanjanaa V</h1>
+<p class="sub">2nd-year IT student, Sri Sairam Engineering College, Chennai. Seeking AI/ML, data science and backend internships.</p>
+<p><a class="btn" href="https://github.com/SANJANAA-V">GitHub</a><a class="btn alt" href="https://www.linkedin.com/in/sanjanaa-v-113143376">LinkedIn</a><a class="btn alt" href="mailto:sanjanaa.v.006@gmail.com">Email</a></p>
+
+<div class="card">
+<h2>ORION3: Pre-payment Scam-Risk Scoring</h2>
+<p>Scores a payment before it completes and returns ALLOW / WARN / BLOCK with plain-language reasons, using payment behaviour, receiver-network and message signals. Served with FastAPI (p95 27 ms).</p>
+<p>Benchmarked LightGBM on real IEEE-CIS data (590k transactions, chronological split, untouched holdout): PR-AUC 0.50, ROC-AUC 0.90. Limitations are documented, including a 51% false-alarm rate of the smishing model on formal legitimate messages.</p>
+<a class="btn" href="https://github.com/SANJANAA-V/ORION3">Code</a><a class="btn alt" href="https://orion3.streamlit.app">Live demo</a>
+<br><small>The free live demo may need up to a minute to wake up.</small>
+</div>
+
+<div class="card">
+<h2>BACKLOT: Distributed Product Returns and Recovery</h2>
+<p>Event-driven system that reconstructs product-return journeys from independent services. Events enter through a FastAPI gateway into a Kafka-compatible broker (Redpanda). The consumer uses a Postgres idempotency ledger, bounded retries with backoff and a dead-letter topic. Includes reconciliation, a risk model and a small RAG step over versioned policies. All data is synthetic.</p>
+<p>Verified run: replayed 1740 events twice and the ledger stayed at 1720 processed rows, with no duplicates.</p>
+<a class="btn" href="https://github.com/SANJANAA-V/BACKLOT">Code</a><a class="btn alt" href="https://backlot.streamlit.app/">Live demo</a>
+<br><small>The free live demo may need up to a minute to wake up.</small>
+</div>
+
+<p><small>Open to paid or unpaid internships. Resume available on request.</small></p>
+</body>
+</html>
